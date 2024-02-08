@@ -7,4 +7,178 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    
 }
+img{
+    width: 100%;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+li{
+    text-decoration:none;
+}
+
+/* /reset */
+
+
+
+/* header*/
+
+header{
+    background-color: #b4d0e7;
+    
+}
+
+.nav{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 5px 10px 0px #000000;
+    -moz-box-shadow: 0px 5px 10px 0px #000000;
+    box-shadow: 0px 5px 10px 0px #000000;
+    box-shadow: 0px 5px 10px 0px #000000;
+    background-color: #ffff;
+}
+
+.logo-container{
+    padding: 10px ;
+}
+
+header .col{
+    width: 50%;
+}
+header .col:last-child{
+    justify-content: flex-end;
+}
+
+.hero .row:first-child{
+    padding-bottom: 60px;
+}
+
+.buttons{
+    align-items: center;
+    display: flex;
+}
+
+
+
+h1{
+    width: 100%;
+    font-size: 40px;
+}
+
+
+p{
+    margin-bottom: 30px;
+}
+
+
+    
+
+.hero .col-30 > button{
+    margin-bottom: 15%;
+}
+
+
+.hero .col-30{
+    min-height: 400px ;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.icon-container{
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+    align-content: end;
+    padding-bottom: 90px;
+    font-size: 30px;
+    
+}
+.hero .fa-arrow-down{
+    justify-self: flex-end;
+}
+
+
+/* utility*/
+.col, header ul{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+    bottom: -80px;
+}
+
+
+.col-30{
+    width: 30%;
+    
+}
+.col-70{
+    width: 70%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+
+.font-small{
+    font-size: 14px;
+}
+
+
+button{
+    padding: 5px 5px;
+}
+
+.btn-big{
+    padding: 10px;
+}
+
+.btn-none{
+    border: none;
+    background: transparent;
+}
+
+.btn-blue{
+    background-color: #0061ff;
+    border: none;
+    color: #ffff;
+}
+
+.gap{
+    gap: 5px;
+}
+
+
+.hero{
+    padding-top: 30px;
+}
+
+/* container*/
+.container-large{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+
