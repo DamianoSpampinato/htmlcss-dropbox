@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 img{
     width: 100%;
@@ -24,6 +24,9 @@ li{
     text-decoration:none;
 }
 
+li > a{
+    font-size: inherit;
+}
 /* /reset */
 
 
@@ -32,7 +35,7 @@ li{
 
 header{
     background-color: #b4d0e7;
-    
+
 }
 
 .nav{
@@ -66,9 +69,24 @@ header .col:last-child{
     display: flex;
 }
 
+/* /header */
 
 
-h1{
+/* hero */
+.hero{
+    padding-top: 30px;
+}
+
+.hero .col-30{
+    min-height: 400px ;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.hero h1{
     width: 100%;
     font-size: 40px;
 }
@@ -79,44 +97,92 @@ p{
 }
 
 
-    
+
 
 .hero .col-30 > button{
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 
-.hero .col-30{
-    min-height: 400px ;
-    display: flex;
-    flex-direction: column;
-    
-    
 
-}
 .icon-container{
     flex-wrap: wrap;
     display: flex;
     flex-grow: 1;
     align-content: end;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
     font-size: 30px;
-    
+
 }
 .hero .fa-arrow-down{
     justify-self: flex-end;
 }
+
+/* /hero */
+
+
+
+/* Panels */
+.panel-settings {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 35px;
+}
+.panel-h-settings{
+    display: flex;
+   flex-direction: row;
+   gap: 10px;
+   
+}
+
+
+.col-33 ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 14px;
+    align-content: baseline;
+    min-height: 150px;
+}
+
+.col-33 ul:first-child{
+    min-height: 150px;
+}
+
+
+
+
+.panel li > div.flex{
+    align-items: first baseline;
+}
+
+.btn-panel{
+   margin-bottom: 30px
+}
+
+small.hr{
+    border-bottom : 1px solid #d0d0d3;
+    padding-bottom:35px ;
+   font-size: 14;
+}
+.panel a{
+    font-size: smaller;
+}
+
+
 
 
 /* utility*/
 .col, header ul{
     display: flex;
     gap: 40px;
-    
+
 }
 
 .flex{
     display: flex;
+    gap:5px;
 }
 
 .relative{
@@ -125,10 +191,15 @@ p{
 }
 
 
+
 .col-30{
     width: 30%;
-    
 }
+
+.col-33{
+    width: calc(100% / 3);
+}
+
 .col-70{
     width: 70%;
 }
@@ -142,6 +213,7 @@ p{
 .font-small{
     font-size: 14px;
 }
+
 
 
 button{
@@ -167,10 +239,55 @@ button{
     gap: 5px;
 }
 
-
-.hero{
-    padding-top: 30px;
+[type="radio"]{
+    margin-right: 5px;
 }
+
+
+.panel{
+    border: 1px solid #d0d0d3;
+    min-height: 900px;
+    flex-direction: column;
+    margin-top:30px ;
+}
+
+.horizontal{
+    border: 1px solid #d0d0d3;
+    min-height: max-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+}
+
+.label{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d0d0d3;
+}
+.panel-h{
+    border: 1px solid #d0d0d3;
+    border-bottom: none;
+    margin-top: 30px;
+    gap: 10px;
+
+}
+
+.fa-check{
+    font-size: inherit;
+    color: #0061ff;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+
+
+
+
 
 /* container*/
 .container-large{
@@ -181,4 +298,29 @@ button{
     align-items: flex-end;
 }
 
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
 
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section:first-of-type{
+    padding-top: 100px;
+}
+.container > h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.panel-container{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.checkboxes{
+    display: flex;
+    gap: 30px;
+}
