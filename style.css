@@ -192,9 +192,10 @@ small.hr{
 .col, header ul{
     display: flex;
     gap: 40px;
-
 }
-
+.overflow-h{
+overflow: hidden;
+}
 .flex{
     display: flex;
     gap:5px;
