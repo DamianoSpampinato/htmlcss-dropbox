@@ -125,7 +125,7 @@ header .col:last-child{
 
 /* /hero */
 
-.container:first-of-type > h1{
+.container > h1:only-of-type{
     font-size: 40px;
 }
 
@@ -185,6 +185,10 @@ small.hr{
    width: 100%;
 }
 
+/* section "passa da uno strumento......." */
+
+
+
 
 
 
@@ -214,11 +218,17 @@ overflow: hidden;
 .gap-big{
     gap: 10px;
 }
+.gap-bigger{
+    gap: 30px
+}
 
 .grow{
     flex-grow: 1;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -236,7 +246,9 @@ overflow: hidden;
 .col-33{
     width: calc(100% / 3);
 }
-
+.wrap > .col-33{
+    width: calc(100% / 3 - 30px);
+}
 .col-60 {
     width: 60%;
 }
