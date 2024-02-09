@@ -50,7 +50,10 @@ header{
 }
 
 .logo-container{
-    padding: 10px ;
+    padding: 10px; 
+}
+.logo-container > img{
+    height: 20px;
 }
 
 header .col{
@@ -88,11 +91,11 @@ header .col:last-child{
 
 .hero h1{
     width: 100%;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 
-p{
+.hero p{
     margin-bottom: 30px;
 }
 
@@ -120,7 +123,9 @@ p{
 
 /* /hero */
 
-
+.container:first-of-type > h1{
+    font-size: 40px;
+}
 
 /* Panels */
 .panel-settings {
@@ -130,11 +135,14 @@ p{
    padding: 35px;
 }
 .panel-h-settings{
+    padding: 25px;
     display: flex;
-   flex-direction: row;
+   flex-direction: column;
    gap: 10px;
    
 }
+
+
 
 
 .col-33 ul {
@@ -173,6 +181,7 @@ small.hr{
 
 
 
+
 /* utility*/
 .col, header ul{
     display: flex;
@@ -184,6 +193,21 @@ small.hr{
     display: flex;
     gap:5px;
 }
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.gap{
+    gap: 5px;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+
+
 
 .relative{
     position: relative;
@@ -235,9 +259,7 @@ button{
     color: #ffff;
 }
 
-.gap{
-    gap: 5px;
-}
+
 
 [type="radio"]{
     margin-right: 5px;
@@ -245,14 +267,14 @@ button{
 
 
 .panel{
-    border: 1px solid #d0d0d3;
+   
     min-height: 900px;
     flex-direction: column;
     margin-top:30px ;
 }
 
 .horizontal{
-    border: 1px solid #d0d0d3;
+    
     min-height: max-content;
     flex-direction: row;
     flex-wrap: wrap;
@@ -260,15 +282,23 @@ button{
 
 }
 
-.label{
+.label-settings{
     text-align: center;
+    
     font-size: 14px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid #d0d0d3;
 }
+.margin-top{
+    margin-top:30px
+}
+
+  
+
+
 .panel-h{
-    border: 1px solid #d0d0d3;
+    
     border-bottom: none;
     margin-top: 30px;
     gap: 10px;
@@ -280,11 +310,13 @@ button{
     color: #0061ff;
 }
 
-.grow{
-    flex-grow: 1;
+.border-out{
+    border: 1px solid #d0d0d3;
 }
 
-
+.border-top-none{
+    border-top: none;
+}
 
 
 
