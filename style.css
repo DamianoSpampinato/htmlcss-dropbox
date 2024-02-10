@@ -230,7 +230,9 @@ overflow: hidden;
 .wrap{
     flex-wrap: wrap;
 }
-
+.column{
+    flex-direction: column;
+}
 
 
 .relative{
@@ -239,7 +241,7 @@ overflow: hidden;
 }
 
 .col-x{
-    width: calc(100% / 3);
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
 }
