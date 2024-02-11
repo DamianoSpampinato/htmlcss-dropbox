@@ -213,6 +213,10 @@ overflow: hidden;
     justify-content: space-between;
 }
 
+.gap-none{
+    gap: 0;
+}
+
 .gap{
     gap: 5px;
 }
