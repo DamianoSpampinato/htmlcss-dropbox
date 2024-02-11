@@ -276,7 +276,21 @@ overflow: hidden;
     font-size: 14px;
 }
 
+.question:nth-child(odd){
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
 
+.question{
+    padding: 35px 0;
+    width: 100%;
+}
+.hover-display{
+    display: none;
+}
+.question:hover .hover-display{
+    display: inline-block;
+}
 
 button{
     padding: 5px 5px;
@@ -358,6 +372,7 @@ button{
 .padding-top{
     padding-top: 35px;
 }
+
 
 .padding-top-left{
     padding-top: 35px;
