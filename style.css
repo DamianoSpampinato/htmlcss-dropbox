@@ -250,9 +250,7 @@ overflow: hidden;
 .gap{
     gap: 5px;
 }
-.gap-big{
-    gap: 10px;
-}
+
 .gap-bigger{
     gap: 30px
 }
@@ -427,6 +425,9 @@ button{
 .padding-top{
     padding-top: 35px;
 }
+.padding-bottom{
+    padding-bottom: 35px;
+}
 
 
 .padding-top-left{
@@ -478,7 +479,7 @@ button{
 }
 
 .center  img{
-    width: 55%;
+    width: 40%;
 }
 
 .center  p{
