@@ -331,7 +331,7 @@ overflow: hidden;
     transform: rotate(180deg)
 }
 
-.nav li:hover{
+.nav li:hover, .btn-none:hover{
     border-bottom: #0061ff 3px solid;
     
 
