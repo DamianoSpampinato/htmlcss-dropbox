@@ -26,6 +26,12 @@ li{
 
 li > a{
     font-size: inherit;
+    font-style: none;
+    
+}
+
+a:visited{
+    color: inherit;
 }
 /* /reset */
 
@@ -42,8 +48,11 @@ header{
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px 0px #000000;
+    box-shadow: 0px 18px 15px -3px rgba(0,0,0,0.1);
     background-color: #ffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo-container{
@@ -197,6 +206,7 @@ footer .horizontal-rule{
     width: 10%;
 }
 
+
 .language{
     color: #999999;
 }
@@ -217,6 +227,10 @@ overflow: hidden;
 .flex{
     display: flex;
     gap:5px;
+}
+
+.overflow-y{
+    overflow-y: auto;
 }
 
 .nowrap{
@@ -261,7 +275,7 @@ overflow: hidden;
 }
 
 .col-x{
-    width: 70%;
+    width: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
@@ -313,6 +327,26 @@ overflow: hidden;
 .question:hover .hover-display{
     display: inline-block;
 }
+.question:hover  .question-title > i{
+    transform: rotate(180deg)
+}
+
+.nav li:hover{
+    border-bottom: #0061ff 3px solid;
+    
+
+
+
+}
+
+
+button:not(.btn-none):hover{
+
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(37, 98, 183, 0.4);
+      
+}
+
 
 button{
     padding: 5px 5px;
@@ -436,6 +470,7 @@ button{
 
 .container-larger > .col-x > .img-container {
     width: 50%;
+    height: 50%;
     
 }
 .center{
