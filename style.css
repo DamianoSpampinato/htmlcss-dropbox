@@ -324,30 +324,10 @@ overflow: hidden;
 .hover-display{
     display: none;
 }
-.question:hover .hover-display{
-    display: inline-block;
-}
-.question:hover  .question-title > i{
-    transform: rotate(180deg)
-}
-
-.nav li:hover, .btn-none:hover{
-    border-bottom: #0061ff 3px solid;
-    
 
 
 
-}
-
-
-button:not(.btn-none):hover{
-
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(37, 98, 183, 0.4);
-      
-}
-
-
+/* --utility--*/
 button{
     padding: 5px 5px;
 
@@ -500,6 +480,8 @@ padding: 25%;
     color:#61082b
 }
 
+/* /UTILITY */
+
 /* id */
 
 #florida-img{
@@ -610,3 +592,25 @@ section:nth-child(5n){
     margin-top: 30px;
     color: #d0d0d3;
 }
+
+/* HOVER */
+.question:hover .hover-display{
+    display: inline-block;
+}
+.question:hover  .question-title > i{
+    transform: rotate(180deg)
+}
+
+.nav li:hover, .btn-none:hover{
+    border-bottom: #0061ff 3px solid;
+    
+}
+
+
+button:not(.btn-none):hover{
+
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(37, 98, 183, 0.4);
+      
+}
+/* /HOVER */
